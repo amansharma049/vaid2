@@ -654,6 +654,7 @@ footer{
   flex-wrap: wrap;
   padding: 40px 80px;
   justify-content: space-between;
+  text-align: start!important
 }
 
 footer .col{
