@@ -1,0 +1,252 @@
+@media (max-width:885px){
+    .welcome-msg .msg-img::before{
+        /* height: 90%; */
+    }
+    .catelist{
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        justify-content: unset;
+    }
+}
+nav{
+    background-color: white;
+box-shadow: rgb(204, 204, 204) 1px 10px 15px;
+}
+@media (max-width:835px){
+    .welcome-msg .msg-img::before{
+        /* height: 83%; */
+    }
+    .green-content h3{
+        width: 80%;
+    }
+}
+@media (max-width:768px) {
+    .ExtraBtn{
+        display: none;
+    }
+    .linkss{
+        padding-right: 2em;
+    }
+
+    .welcome-msg .msg-img::before{
+        /* height: 78%; */
+    }
+    .green-bg{
+        width: 450px;
+    }
+}
+@media (max-width:715px){
+    .yframe{
+        flex-direction: column-reverse;
+    }
+    .yframe .yf-content{
+        width: 100%;
+    }
+    .yframe .yf-img{
+        width: 100%;
+    }
+    .green-content h3{
+        width: 100%;
+    }
+    .green-content{
+        padding-bottom: 0;
+    }
+    .bg-review{
+        height: auto;
+    }
+    .green-bg{
+        line-height: 0;
+        width: auto;
+    }
+    .green-content{
+        text-align: center;
+    }
+    .green-content button{
+        display: none;
+    }
+    .review-lists{
+        position: unset;
+        width: 100%;
+        /* background: rgb(4, 27, 12,0.81); */
+        padding-bottom: 4em;
+    }
+    .contact-text{
+        width: 70%;
+    }
+    .green-bg{
+        width: -webkit-fill-available;   
+    }
+}
+@media (max-width:550px){
+    .Navactive{
+            position: absolute;
+            left: 0;
+            width: -webkit-fill-available;
+            display: flex!important;
+            padding: 1em;
+            flex-direction: column;
+            top: 5em;
+            background: #fff;
+        
+    }
+    .linkss{
+        display: none;
+    }
+    .bar1{
+        display: block;
+        font-size: xx-large;
+        padding: 1em;
+    }
+
+    .single_img h2{
+        font-size: 2.5em;
+    }
+
+    .welcome-msg{
+        flex-direction: column-reverse;
+    }
+    .welcome-msg .msg{
+        margin: 2em 1em;
+    }
+    .wel .coloured{
+        font-size: 1.2em;
+    }
+    .welcome-msg .msg-img{
+        width: 100%;
+    }
+    .welcome-msg .msg-img::before{
+        /* height: 100%; */
+    }
+    .pro{
+        width: 200px;
+    }
+
+    .note{
+        height: auto;
+    }
+   
+    .Products{
+        padding: 2em;
+    }
+    .prolist{
+        padding: 0;
+    }
+    
+    footer .col{
+        text-align: left;
+    }
+    .contact-text{
+        width: 90%;
+    }
+    .g-map{
+        width: -webkit-fill-available;
+    }
+    #about-head{
+        flex-direction: column;
+    }
+    #about-head img{
+        width: 100%;
+    }
+    #contact-details{
+        flex-direction: column;
+    }
+    #contact-details .details{
+        width: 100%;
+    }
+    #contact-details .map {
+        width: 100%;
+        height: auto;
+    }
+    #form-details form{
+        width: 100%;
+    }
+    #prodetails{
+        flex-direction: column;
+    }
+    #prodetails .single-pro-image{
+        width: 100%;
+    }
+    #prodetails .single-pro-details{
+        width: 100%;
+    }
+    .pro h5{
+        font-size: large;
+    }
+    .therapy-card{
+        flex-direction: column;
+    }
+    .therapy-card:nth-last-of-type(odd){
+        flex-direction: column;
+      }
+      .therapy-card .t-c-content{
+        width: 100%;
+      }
+      .flex button{
+        padding: 1em 2em;
+      }
+}
+@media (max-width:385px){
+    footer{
+        padding: 40px;
+    }
+    .map-g{
+        width: 250px!important;
+    }
+    .green-content{
+        padding: 3em 2em;
+    }
+    .section-p1{
+        padding: 40px 40px;
+    }
+    #about-head div{
+        padding: 0;
+    }
+    #form-details {
+        padding: 0;
+    }
+    .contact{
+        padding: 1.5em;
+    }
+    .pro{
+        width: 150px;
+    }.pro h5{
+        padding: 0 4px;
+    }
+    .pro h5,.pro p{
+        margin: 0;
+        font-size: medium;
+    }
+    .pro button{
+        padding: .5em 1.5em;
+    }
+    .therapy-card .t-c-img{
+        height: 200px;
+    }
+}
+@media (max-width:335px){
+    .map-g{
+        width: 220px!important;
+    }
+}
+@media (max-width:315px){
+    .map-g{
+        width: 200px!important;
+    }
+
+    .green-content h3{
+        font-size: 2em;
+    }
+    
+    .green-content{
+        padding: 3em 1em;
+    }
+    .flex {
+        justify-content: center;
+    }
+
+}
+
+
+footer{
+    
+}

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thery & Products || Vaidh Bharti</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/res-index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">ossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="css/rating.css">
+        <style>
+            
+        
+            .text-center,
+            .stars {
+                text-align-last: center;
+            }
+        
+            .justify-content-center h3 {
+                font-size: 22px;
+            }
+        
+            .justify-content-center .row {
+                margin: 20px 0;
+            }
+        
+            .justify-content-center textarea {
+                padding: 12px 6px;
+                resize: none;
+                width: 80%;
+                border-radius: 4px;
+                border: 2px solid;
+                background-color: #f8f8f8;
+                font-size: 16px;
+            }
+        
+            .stars .edit {
+                place-content: center;
+                display: flex;
+                flex-direction: row-reverse;
+            }
+        
+            .rating-block {
+                padding: 40px;
+            }
+        
+            .rating-block h4 {
+                margin-bottom: 10px;
+            }
+        
+            @media (max-width:570px) {
+                .justify-content-center h3 {
+                    font-size: 1.15em;
+                }
+            }
+        </style>
+</head>
+<body>
+    <!-- NaVBBAR -->
+
+    <nav id="navbar">
+        <div class="nav">
+            <div class="logo">
+                <img src="img/123.jpeg" alt="">
+            </div>
+            <div class="links">
+                <ul class="linkss" id="links">
+                    <li onclick="location.href='index.html'">Home</li>
+                    <li class="active" onclick="location.href='therpy.html'">Therapy</li>
+                    <li onclick="location.href='products.html'">Product</li>
+                    <li onclick="location.href='about.html'">Abouts Us</li>
+                    <li onclick="location.href='contact.html'">Contact Us</li>
+                </ul>
+            </div>
+            <div class="bar1" onclick="nav()"><i class="fa-solid fa-bars"></i></div>
+            <div class="ExtraBtn">
+                <button class="btn primery">Consult</button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- brand name -->
+
+    <div class="wel" style="margin: 8em 0 2em;">
+        <h2>WELCOME TO VAIDH BHARTI</h2>
+        <p class="coloured">सब्बे सत्ता सुखी होन्तु, सब्बे होन्तु च खेमिनी | <br>
+            सब्बे भद्राणि पस्सन्तु माँ किचिंत दुख्मागमा ||</p>
+        <p>Witness a Hundred Springs</p>
+    </div>
+    
+    <!-- product details -->
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/pro1.jpeg" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/pro1.jpeg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/pro1.jpeg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/pro1.jpeg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/pro1.jpeg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details" style="text-align: start;">
+            <h6>Home / Shilajit</h6>
+            <h4>Himalyan Suryatapi Pure Shilajit</h4>
+            <h2>Rs. 999</h2>
+            
+            <input type="number" min="1" max="5" value="1">
+            <a href="cart.html"><button class="fa-solid fa-cart-shopping cart btn "> Buy Now</button></a>
+            <h4>Product Details</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem officiis 
+                omnis facere magni adipisci vel obcaecati repellat possimus maiores. 
+                Voluptate rerum illo dicta modi enim, facilis excepturi eaque perferendis soluta!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem officiis 
+                omnis facere magni adipisci vel obcaecati repellat possimus maiores. 
+                Voluptate rerum illo dicta modi enim, facilis excepturi eaque perferendis soluta!
+                
+            </span>
+        </div>
+    </section>
+
+    <!-- rating -->
+
+    <div class="rating">
+        <div class="container justify-content-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="hidden" id="selected_rating" name="selected_rating" value="" required="required">
+                    <div class="stars">
+
+                        <form action="" class="edit">
+
+                            <input class="star star-5" id="star-5" type="radio" name="star" />
+
+                            <label class="btnrating star star-5" for="star-5" data-attr="5"></label>
+
+                            <input class="star star-4" id="star-4" type="radio" name="star" />
+
+                            <label class="btnrating star star-4" for="star-4" data-attr="4"></label>
+
+                            <input class="star star-3" id="star-3" type="radio" name="star" />
+
+                            <label class="btnrating star star-3" for="star-3" data-attr="3"></label>
+
+                            <input class="star star-2" id="star-2" type="radio" name="star" />
+
+                            <label class="btnrating star star-2" for="star-2" data-attr="2"></label>
+
+                            <input class="star star-1" id="star-1" type="radio" name="star" />
+
+                            <label class="btnrating star star-1" for="star-1" data-attr="1"></label>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container justify-content-center text-center">
+            <textarea name="heading-review" id="heading-review" rows="1" required></textarea>
+        </div>
+        <div class="container justify-content-center text-center">
+            <textarea name="reveiw" id="review" rows="5" required></textarea>
+        </div>
+        <div class="container justify-content-center text-center">
+            <input style="padding: 15px; font-size: 18px; font-weight:bolder; background-color:#088178" type="submit" onclick="store_reveiw()    " value="submit">
+        </div>
+    </div>
+
+     <!-- products -->
+     <div class="Products">
+        <div class="pro-content">
+            <h4>THE BEST OF VAIDH BHARTI</h4>
+            <h3>Best-Selling Products</h3>
+        </div>
+        <div class="prolist">
+            <div class="pro" onclick="location.href='sproduct.html'">
+                <img src="img/pro1.jpeg" alt="">
+                <h5>Himalyan Suryatapi Pure Shilajit</h5>
+                <p><span>₹899.00</span>(₹1.00 / Gram)</p>
+                <p>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star dim"></i>
+                </p>
+                <button class="btn primery">Show Now</button>
+            </div>
+            <div class="pro" onclick="location.href='sproduct.html'">
+                <img src="img/pro1.jpeg" alt="">
+                <h5>Himalyan Suryatapi Pure Shilajit</h5>
+                <p><span>₹899.00</span>(₹1.00 / Gram)</p>
+                <p>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star dim"></i>
+                </p>
+                <button class="btn primery">Show Now</button>
+            </div>
+            <div class="pro" onclick="location.href='sproduct.html'">
+                <img src="img/pro1.jpeg" alt="">
+                <h5>Himalyan Suryatapi Pure Shilajit</h5>
+                <p><span>₹899.00</span>(₹1.00 / Gram)</p>
+                <p>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star dim"></i>
+                </p>
+                <button class="btn primery">Show Now</button>
+            </div>
+
+            <div class="pro" onclick="location.href='sproduct.html'">
+                <img src="img/pro1.jpeg" alt="">
+                <h5>Himalyan Suryatapi Pure Shilajit</h5>
+                <p><span>₹899.00</span>(₹1.00 / Gram)</p>
+                <p>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star dim"></i>
+                </p>
+                <button class="btn primery">Show Now</button>
+            </div>
+            <div class="pro" onclick="location.href='sproduct.html'">
+                <img src="img/pro1.jpeg" alt="">
+                <h5>Himalyan Suryatapi Pure Shilajit</h5>
+                <p><span>₹899.00</span>(₹1.00 / Gram)</p>
+                <p>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star dim"></i>
+                </p>
+                <button class="btn primery">Show Now</button>
+            </div>
+            <div class="pro" onclick="location.href='sproduct.html'">
+                <img src="img/pro1.jpeg" alt="">
+                <h5>Himalyan Suryatapi Pure Shilajit</h5>
+                <p><span>₹899.00</span>(₹1.00 / Gram)</p>
+                <p>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star dim"></i>
+                </p>
+                <button class="btn primery">Show Now</button>
+            </div>
+            <div class="pro" onclick="location.href='sproduct.html'">
+                <img src="img/pro1.jpeg" alt="">
+                <h5>Himalyan Suryatapi Pure Shilajit</h5>
+                <p><span>₹899.00</span>(₹1.00 / Gram)</p>
+                <p>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star dim"></i>
+                </p>
+                <button class="btn primery">Show Now</button>
+            </div>
+            <div class="pro" onclick="location.href='sproduct.html'">
+                <img src="img/pro1.jpeg" alt="">
+                <h5>Himalyan Suryatapi Pure Shilajit</h5>
+                <p><span>₹899.00</span>(₹1.00 / Gram)</p>
+                <p>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star dim"></i>
+                </p>
+                <button class="btn primery">Show Now</button>
+            </div>
+            <div class="pro" onclick="location.href='sproduct.html'">
+                <img src="img/pro1.jpeg" alt="">
+                <h5>Himalyan Suryatapi Pure Shilajit</h5>
+                <p><span>₹899.00</span>(₹1.00 / Gram)</p>
+                <p>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star light"></i>
+                    <i class="fas fa-star dim"></i>
+                </p>
+                <button class="btn primery">Show Now</button>
+            </div>
+
+        </div>
+    </div>
+
+      <!-- contact -->
+
+      <div class="contact">
+        <div class="contact-text">
+            <h4>GET IN TOUCH FROM ANYWHERE</h4>
+            <p>Get insider access for limited edition offers, new launches, insights on
+                Ayurvedic tips & tricks, health, skincare and more!</p>
+                <button class="btn primery">Subscribe</button>
+        </div>
+    </div>
+
+     <!-- footer -->
+
+     <footer class="section-p1 no-bootstrap">
+        <div class="col" style="flex: auto!important;">
+            <img class="logo" src="img/123.jpeg" alt="">
+            <h4>Contact Us</h4>
+            <p><strong>Address:</strong> 3km Barwala Road Virat Nagar <br> Near Shree Ram ITI, Hansi (Hisar) 125033</p>
+            <p><strong>Phone: </strong>+91 000 000 0000</p>
+            <p><strong>Hours: </strong>10:00 - 16:00, Mon - Sat</p>
+            <div class="follow" style="padding:15px 0">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i onclick="window.location.href='#'" class="fab fa-facebook-f"></i>
+                    <i onclick="window.location.href='#'" class="fab fa-twitter"></i>
+                    <i onclick="window.location.href='#'" class="fab fa-instagram"></i>
+                    <i onclick="window.location.href='#'" class="fab fa-pinterest"></i>
+                    <i onclick="window.location.href='#'" class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col" style="flex: auto!important;">
+            <h4>Usefull Links</h4>
+            <a href="#">About Us</a>
+            <a href="#">Order Status</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Term & Conditions</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col" style="flex: auto!important;">
+            <h4>Our Location</h4>
+          <!--   <a href="cart">View Cart</a>
+            
+            <a href="#"></a>
+            <a href="#">Wishlist</a>
+            <a href="#">Track My Order</a> -->
+            <div class="map-g">
+                <iframe class="g-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1742.6499475962678!2d75.94933737832307!3d29.126343665906436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3912396a0ba7614f%3A0x38c6cb6f73edbda9!2z4KSq4KSC4KSa4KS24KWA4KSyIOCkhuCksOCli-Ckl-CljeCkr-CkruCljSDgpKrgpYDgpKA!5e0!3m2!1sen!2sin!4v1698483181771!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>Copyright ©2023 All rights reserved By Vaid Bharti</p>
+            <p>Developed By <a href="https://growsupreme.in" target="_blank"> Grow Supreme</a></p>
+        </div>
+        
+    </footer>
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+    
+        smallimg[0].onclick = function() {
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function() {
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function() {
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function() {
+            MainImg.src = smallimg[3].src;
+        }
+    </script>
+    <script src="js/index.js"></script>
+</body>
+</html>
